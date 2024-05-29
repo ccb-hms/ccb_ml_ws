@@ -1,0 +1,33 @@
+---
+title: "Lab1"
+date: last-modified
+author: 
+    - Grey Kuling
+    - Andrew Ghazi
+format: 
+    html:
+        toc: true
+        toc-depth: 2
+        code-fold: show
+        code-tools: true
+        theme: 
+          dark: darkly
+          light: flatly
+        highlight-style: a11y
+---
+
+Lab1 content
+
+```{r}
+library(ranger)
+
+ranger(Species ~ ., data = iris)
+
+```
+
+
+:::{.callout-tip title="Exercise"}
+
+What's the answer to this question?
+
+:::

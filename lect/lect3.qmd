@@ -1,0 +1,56 @@
+---
+title: "Lecture 1"
+authors:
+    - name: Grey Kuling
+    - name: Andrew Ghazi
+date: "9/1/2024"
+format: 
+    revealjs:
+      theme: [default, ../my_theme.scss]
+      width: 1600
+      height: 1000
+      incremental: false
+      transition: fade
+      background-transition: fade
+      transition-speed: fast
+      chalkboard: true
+
+title-slide-attributes: 
+  data-background-image: images/title-bg.png
+  data-background-size: contain
+---
+
+Lecture 1 content.
+
+# Data Types, Distributions, and Preprocessing
+
+## Data Types
+
+* Numeric, binary, categorical, ordinal, multivariate
+
+## Distributions
+
+* Normal
+* Binomial
+* Exponential
+* Poisson
+* MVNormal
+
+## Preprocessing
+
+# Data types: qualitative and quantitative
+
+
+
+# Data distributions: parametric and non-parametric
+
+
+
+# Normalization and data preprocessing
+
+
+
+# Overcoming Data Challenges: Missing data, Seasonality, ordinal responses, nested responses
+
+
+

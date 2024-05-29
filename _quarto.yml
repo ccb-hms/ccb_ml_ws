@@ -1,0 +1,34 @@
+project:
+  type: website
+
+website:
+  title: "CCB Machine Learning Workshop"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+  sidebar: 
+    pinned: true
+    contents: 
+      - href: lect/lect1.qmd
+        text: Lecture 1
+      - href: lab/lab1.qmd
+        text: Lab 1
+      - href: lect/lect2.qmd
+        text: Lecture 2
+      - href: lab/lab2.qmd
+        text: Lab 2
+      - href: lect/lect3.qmd
+        text: Lecture 3
+      - href: lab/lab3.qmd
+        text: Lab 3
+
+format:
+  html:
+    theme: a11y
+    css: styles.css
+    toc: true
+
+editor: visual
+
