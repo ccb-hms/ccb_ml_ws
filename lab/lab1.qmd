@@ -16,7 +16,21 @@ format:
         highlight-style: a11y
 ---
 
+# section 1
+
+Lab 1: Data Exploration and Visualization
+
+Theme: Exploring and Visualizing Dental Health Data
+
+* Exercise 1: Use data visualization techniques to visualize qualitative data related to dental health, such as patient demographics and dental treatment preferences.
+
+* Exercise 2: Visualize quantitative data related to dental health, such as statistical distributions of cavity occurrences or tooth decay rates.
+
+* Exercise 3: Create time series visualizations to analyze trends in dental health data over time, such as the prevalence of dental caries or plaque detection rates.
+
 Lab1 content
+
+![](../lect/images/2024-02-22_15:31:56.png)
 
 ```{r}
 library(ranger)
@@ -24,10 +38,8 @@ library(ranger)
 ranger(Species ~ ., data = iris)
 
 ```
+## subsection 1
 
-
-:::{.callout-tip title="Exercise"}
-
+::: {.callout-tip title="Exercise"}
 What's the answer to this question?
-
 :::

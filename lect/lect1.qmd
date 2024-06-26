@@ -26,31 +26,31 @@ Lecture 1 content.
 
 ## Data Types
 
-* Numeric, binary, categorical, ordinal, multivariate
+-   Numeric, binary, categorical, ordinal, multivariate
 
 ## Distributions
 
-* Normal
-* Binomial
-* Exponential
-* Poisson
-* MVNormal
+-   Normal
+-   Binomial
+-   Exponential
+-   Poisson
+-   MVNormal
 
 ## Preprocessing
 
+
+
 # Data types: qualitative and quantitative
 
-
-
 # Data distributions: parametric and non-parametric
-
-
 
 # Normalization and data preprocessing
 
 
-
 # Overcoming Data Challenges: Missing data, Seasonality, ordinal responses, nested responses
 
-
+* Probabilistic imputation
+* Gaussian processes
+* Nonlinear link functions
+* Mixed effects models
 

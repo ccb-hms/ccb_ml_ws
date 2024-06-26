@@ -16,7 +16,15 @@ format:
         highlight-style: a11y
 ---
 
-Lab1 content
+
+# Lab 3: Model Fitting, Validation, and Ethical Considerations
+
+Theme: Evaluating Dental Health Models and Addressing Bias
+
+* Exercise 1: Assess model fitting and validation techniques to ensure the quality of dental health predictive models, addressing issues of overfitting and underfitting.
+* Exercise 2: Implement train-test validation and validation metrics to evaluate the performance of dental health predictive models.
+* Exercise 3: Explore fairness, bias, and variance considerations in dental health data, addressing class imbalance and transparency in predictive modeling for dental health outcomes.
+
 
 ```{r}
 library(ranger)
@@ -25,9 +33,6 @@ ranger(Species ~ ., data = iris)
 
 ```
 
-
-:::{.callout-tip title="Exercise"}
-
+::: {.callout-tip title="Exercise"}
 What's the answer to this question?
-
 :::

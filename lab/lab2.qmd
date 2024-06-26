@@ -16,7 +16,14 @@ format:
         highlight-style: a11y
 ---
 
-Lab1 content
+# Lab 2: Regression and Classification Analysis
+
+Theme: Predictive Modeling for Dental Health Outcomes
+
+* Exercise 1: Implement linear and logistic regression techniques to predict dental health outcomes based on various factors like patient demographics, oral hygiene habits, and diet.
+* Exercise 2: Utilize clustering classification to segment dental patient populations based on their oral health characteristics and treatment needs.
+* Exercise 3: Apply tree-based classifiers to predict the success of restorative dentistry procedures or the likelihood of developing periodontitis.
+
 
 ```{r}
 library(ranger)
@@ -25,9 +32,6 @@ ranger(Species ~ ., data = iris)
 
 ```
 
-
-:::{.callout-tip title="Exercise"}
-
+::: {.callout-tip title="Exercise"}
 What's the answer to this question?
-
 :::
