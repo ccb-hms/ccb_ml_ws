@@ -874,8 +874,8 @@
     }
   },
   "files": {
-    "_publish.yml": {
-      "checksum": "c430c3689a1674b105d3ea8a455f6b05"
+    "_publish_tmp.yml": {
+      "checksum": "deb2bed4186731c1b575e0e6e9da7bb1"
     },
     "_quarto.yml": {
       "checksum": "89c080128f078b3f665b1e9352392202"
@@ -1310,7 +1310,7 @@
       "checksum": "a13cd362c8f12f048dd56488b80a8d37"
     },
     "index.qmd": {
-      "checksum": "178ee445f7107302168c4ebd65b85f56"
+      "checksum": "18d63139589758859f8b59fb0b16637c"
     },
     "lab/lab1.qmd": {
       "checksum": "40a28eff6be1332386f5dd591c3c91ed"
