@@ -25,7 +25,6 @@ Theme: Evaluating Dental Health Models and Addressing Bias
 * Exercise 2: Implement train-test validation and validation metrics to evaluate the performance of dental health predictive models.
 * Exercise 3: Explore fairness, bias, and variance considerations in dental health data, addressing class imbalance and transparency in predictive modeling for dental health outcomes.
 
-
 ```{r}
 library(ranger)
 

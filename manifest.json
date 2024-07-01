@@ -6,7 +6,7 @@
     "appmode": "quarto-static",
     "primary_rmd": "index.qmd",
     "primary_html": null,
-    "content_category": "_site",
+    "content_category": "site",
     "has_parameters": false
   },
   "quarto": {
@@ -884,46 +884,37 @@
       "checksum": "26396e38ad008104961e30ba90affa4c"
     },
     "_site/index.html": {
-      "checksum": "a7a6441af42c6a6e8daed7c61cc36ff9"
+      "checksum": "670c12ea0776f3f1c93e0beb69593e4e"
     },
     "_site/lab/lab1.html": {
-      "checksum": "dce11c895d57d5878b0cc511a602bec6"
+      "checksum": "4d25265c661b96ae729fcd87b848cca4"
     },
     "_site/lab/lab2.html": {
       "checksum": "3ccea333f48ee545f5c1d673c74c7f3b"
     },
-    "_site/lab/lab2.qmd": {
-      "checksum": "72969273b3af36ae253d8c3702e75e4a"
-    },
     "_site/lab/lab3.html": {
-      "checksum": "6ca746f16399834c0de34725b1cb0624"
+      "checksum": "7d6e4b141adf7009f13657996f538256"
     },
-    "_site/lab/lab3.qmd": {
-      "checksum": "72969273b3af36ae253d8c3702e75e4a"
-    },
-    "_site/lect/images/2024-02-22_15:31:56.png": {
+    "_site/lect/images/2024-02-22_15_31_56.png": {
       "checksum": "14706b23fcf17ba3ec6e1b39b9fb5675"
+    },
+    "_site/lect/images/logo.png": {
+      "checksum": "39c9c4e622d38e462eb3903546262954"
     },
     "_site/lect/images/title-bg.png": {
       "checksum": "fce8e440c3019c5d584a7001d6f6e001"
     },
     "_site/lect/lect1.html": {
-      "checksum": "ee57424ea61e401ff7e6c9a94cbf3227"
+      "checksum": "780740565bda3992f07cc4ad1abb9592"
     },
     "_site/lect/lect2.html": {
       "checksum": "1c2bc95c58f3083002c6e063ab290591"
     },
-    "_site/lect/lect2.qmd": {
-      "checksum": "3b85e3091b6617642cfb4a7a0c5b8084"
-    },
     "_site/lect/lect3.html": {
       "checksum": "1c2bc95c58f3083002c6e063ab290591"
     },
-    "_site/lect/lect3.qmd": {
-      "checksum": "3b85e3091b6617642cfb4a7a0c5b8084"
-    },
     "_site/search.json": {
-      "checksum": "f687f4b17c019a6bc3598a81379a5958"
+      "checksum": "1cc9391013c03a108335c98a5a6c76ec"
     },
     "_site/site_libs/bootstrap/bootstrap-icons.css": {
       "checksum": "2318f137d201fbf51601fa0faba6bef7"
@@ -932,7 +923,7 @@
       "checksum": "1a51dfbe5467607389d603c02a77cd10"
     },
     "_site/site_libs/bootstrap/bootstrap.min.css": {
-      "checksum": "661ca75bda779aa84caa9fb3f08b2b41"
+      "checksum": "b4350d60157804217f7cf060bd8bcbc6"
     },
     "_site/site_libs/bootstrap/bootstrap.min.js": {
       "checksum": "e2b09c06f0e714b6144a6788a28e3950"
@@ -1310,31 +1301,37 @@
       "checksum": "a13cd362c8f12f048dd56488b80a8d37"
     },
     "index.qmd": {
-      "checksum": "18d63139589758859f8b59fb0b16637c"
+      "checksum": "a13b4a052ce0af5333e5ba978253622d"
     },
     "lab/lab1.qmd": {
-      "checksum": "40a28eff6be1332386f5dd591c3c91ed"
+      "checksum": "2fe08ed4f324d02e2e29a88a64081a96"
     },
     "lab/lab2.qmd": {
       "checksum": "7f3b20409d91bfb382b3cbf192911b3e"
     },
     "lab/lab3.qmd": {
-      "checksum": "622f3c8bc3724aac4fc512e0fa46df2a"
+      "checksum": "6c46bb782398ad33ba3cf8b6f85dc955"
     },
-    "lect/images/2024-02-22_15:31:56.png": {
+    "lect/images/2024-02-22_15_31_56.png": {
       "checksum": "14706b23fcf17ba3ec6e1b39b9fb5675"
+    },
+    "lect/images/logo.png": {
+      "checksum": "39c9c4e622d38e462eb3903546262954"
     },
     "lect/images/title-bg.png": {
       "checksum": "fce8e440c3019c5d584a7001d6f6e001"
     },
     "lect/lect1.qmd": {
-      "checksum": "2d8e2a4481c822e2000c00e9a7dc8a47"
+      "checksum": "764f3b5dcad008cb690475006f30e619"
     },
     "lect/lect2.qmd": {
       "checksum": "3b85e3091b6617642cfb4a7a0c5b8084"
     },
     "lect/lect3.qmd": {
       "checksum": "3b85e3091b6617642cfb4a7a0c5b8084"
+    },
+    "lect/logo-hyperlink.html": {
+      "checksum": "c09385ab33120357a13ff148d4179acf"
     },
     "my_theme.scss": {
       "checksum": "56caf467276c4204f5d9427155775617"

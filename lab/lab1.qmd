@@ -30,7 +30,7 @@ Theme: Exploring and Visualizing Dental Health Data
 
 Lab1 content
 
-![](../lect/images/2024-02-22_15:31:56.png)
+![](../lect/images/2024-02-22_15_31_56.png)
 
 ```{r}
 library(ranger)
