@@ -14,6 +14,8 @@ format:
       background-transition: fade
       transition-speed: fast
       chalkboard: true
+      logo: images/logo.png
+include-after-body: logo-hyperlink.html
 
 title-slide-attributes: 
   data-background-image: images/title-bg.png
@@ -22,11 +24,24 @@ title-slide-attributes:
 
 Lecture 1 content.
 
+# Intro
+
+## Intro to workshop
+
+- What we assume
+- What we'll do
+- How we'll do it
+
+## Intro to the site
+
+- URL
+- How to navigate
+
 # Data Types, Distributions, and Preprocessing
 
 ## Data Types
 
--   Numeric, binary, categorical, ordinal, multivariate
+- Continuous, binary, categorical, ordinal, multivariate
 
 ## Distributions
 

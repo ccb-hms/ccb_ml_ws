@@ -1,0 +1,21 @@
+<script type="text/javascript">
+  function hyperlink_logo() {
+    let logo = document.querySelector('img.slide-logo');
+    const logo_cloned = logo.cloneNode(true);
+    const link = document.createElement('a');
+    // -----------------------------------------------------------
+    // set the link for the logo here in `link.href` within quotes
+    link.href = 'https://ccb-rstudio-connect.hms.harvard.edu/ccb_ml_ws/';
+    // -----------------------------------------------------------
+    link.target = '_blank';
+    link.appendChild(logo_cloned);
+    logo.replaceWith(link);
+  };
+  
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    hyperlink_logo();
+  });
+</script>
+
+<!-- https://stackoverflow.com/questions/76811936/how-to-provide-a-link-for-the-logo-in-quarto-revealjs-presentations -->
+
