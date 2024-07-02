@@ -1612,7 +1612,7 @@
       "checksum": "deb2bed4186731c1b575e0e6e9da7bb1"
     },
     "_quarto.yml": {
-      "checksum": "89c080128f078b3f665b1e9352392202"
+      "checksum": "30f2e2dc891f47b2d14672bd7b12ef6d"
     },
     "_site/about.html": {
       "checksum": "26396e38ad008104961e30ba90affa4c"
@@ -1624,10 +1624,10 @@
       "checksum": "3302b7a83c110fc723bd5ce702c6a204"
     },
     "_site/lab/lab2.html": {
-      "checksum": "7e4a7933617e805ee4be1585bdeafa19"
+      "checksum": "3ccea333f48ee545f5c1d673c74c7f3b"
     },
     "_site/lab/lab3.html": {
-      "checksum": "963f753991102a8e2b4ba53c454f6eab"
+      "checksum": "7d6e4b141adf7009f13657996f538256"
     },
     "_site/lect/images/2024-02-22_15_31_56.png": {
       "checksum": "14706b23fcf17ba3ec6e1b39b9fb5675"
@@ -1654,13 +1654,13 @@
       "checksum": "718d4a3ba2a96e94cc9a703a6c6f43d6"
     },
     "_site/lect/lect2.html": {
-      "checksum": "09d1bcf19b2969cd4176a76d92e5cda5"
+      "checksum": "9167c6f5ef72aab3e5a75bba6c8287e3"
     },
     "_site/lect/lect3.html": {
       "checksum": "3576f2865e1b0a320a0a5978a98b1b1c"
     },
     "_site/search.json": {
-      "checksum": "faf9781c4b1ba4573d98e8fcc240a958"
+      "checksum": "7448b689367e8428f72b7b57fd0cfcb1"
     },
     "_site/site_libs/bootstrap/bootstrap-icons.css": {
       "checksum": "2318f137d201fbf51601fa0faba6bef7"
@@ -1669,7 +1669,7 @@
       "checksum": "1a51dfbe5467607389d603c02a77cd10"
     },
     "_site/site_libs/bootstrap/bootstrap.min.css": {
-      "checksum": "b4350d60157804217f7cf060bd8bcbc6"
+      "checksum": "661ca75bda779aa84caa9fb3f08b2b41"
     },
     "_site/site_libs/bootstrap/bootstrap.min.js": {
       "checksum": "e2b09c06f0e714b6144a6788a28e3950"
@@ -2140,7 +2140,7 @@
       "checksum": "764f3b5dcad008cb690475006f30e619"
     },
     "lect/lect2.qmd": {
-      "checksum": "4b97009dff09008116480645287a66dd"
+      "checksum": "21e4a4035f8c44a305fa468036c75181"
     },
     "lect/lect3.qmd": {
       "checksum": "34b32caba967d573da07abe6684182a6"
