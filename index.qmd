@@ -1,9 +1,11 @@
 ---
 title: "CCB ML Workshop"
+
+format: 
+  html: 
+    theme: [default, my_theme.scss]
 ---
 
 This is the website for the CCB ML Workshop. Lecture and lab links on the left. Get PDF version of the presentations by opening the presentation, then bottom left hamburger menu \> tools \> PDF Export mode.
 
-Test3.asdfdas
-
-asdfasdf
+Test3.

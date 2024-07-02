@@ -1,5 +1,5 @@
 ---
-title: "Lecture 1"
+title: "Lecture 2"
 authors:
     - name: Grey Kuling
     - name: Andrew Ghazi
@@ -14,43 +14,191 @@ format:
       background-transition: fade
       transition-speed: fast
       chalkboard: true
+      logo: images/logo.png
+      
+include-in-header:
+  - text: |
+      <script type="text/javascript">
+        window.addEventListener('load', function() {
+          const images = document.querySelectorAll('img');
+
+          images.forEach(image => {
+            image.style = 'filter: drop-shadow(0 0 0.75rem grey)';
+          });
+        });
+      </script>
+include-after-body: logo-hyperlink.html
 
 title-slide-attributes: 
   data-background-image: images/title-bg.png
   data-background-size: contain
 ---
 
-Lecture 1 content.
+```{r}
+#| echo: false
+library(dplyr)
+library(ggplot2)
+library(rgl)
 
-# Data Types, Distributions, and Preprocessing
+theme_set(theme_classic() + 
+            theme(text = element_text(size = 22)))
 
-## Data Types
+options(digits = 2)
+set.seed(123)
+```
 
-* Numeric, binary, categorical, ordinal, multivariate
+```{css, echo = FALSE}
+.tallcode { 
+  background-color: $code-block-bg; 
+  padding: 6px 9px; 
+  max-height: 950px; 
+  white-space: pre; 
+ } 
+```
 
-## Distributions
-
-* Normal
-* Binomial
-* Exponential
-* Poisson
-* MVNormal
-
-## Preprocessing
-
-# Data types: qualitative and quantitative
-
-
-
-# Data distributions: parametric and non-parametric
-
-
-
-# Normalization and data preprocessing
+# Regression and Classification Methods
 
 
+## Linear Regression 
 
-# Overcoming Data Challenges: Missing data, Seasonality, ordinal responses, nested responses
+<!-- Show a linear fit with a ribbon -->
+
+```{r}
+#| echo: true
+x = rnorm(30)
+y = 2*x - 1 + rnorm(30)
+```
+
+```{r}
+ggplot(data.frame(x, y),
+       aes(x,y)) + 
+  geom_point()
+```
+
+## Linear Regression
+
+```{r}
+#| echo: false
+
+ggplot(data.frame(x, y),
+       aes(x,y)) +
+  geom_smooth(method = "lm") + 
+  geom_point()
+```
+
+## Multivariate linear regression
+
+```{r}
+x = rnorm(30); y = rnorm(30)
+z = 1*x - 2*y + .5 + rnorm(30)
+```
+
+```{r}
+#| echo: false
+#| fig-align: center
+
+lm_res = lm(z ~ y + x)
+pred_pts = expand.grid(x = range(x), 
+                       y = range(y))
+
+X = seq(min(x), max(x), length.out = 5) |> rep(times = 5) |> matrix(ncol = 5)
+Y = seq(min(y), max(y), length.out = 5) |> rep(times = 5) |> matrix(ncol = 5) |> t()
+Z = matrix(NA, 5,5)
+for (i in 1:5) for (j in 1:5) Z[i,j] = predict(lm_res, data.frame(x = X[i,j], y = Y[i,j]))
+
+rgl::plot3d(x,y,z)
+rgl::surface3d(X,Y,Z, color = "grey70")
+rglwidget(width = 950, height = 950)
+# z = seq(min(x), max(x), length.out = 10) |> rep(times = 5) |> matrix(ncol = 5)
+# surf_mat = cbind(pred_pts, predict(lm_res, pred_pts))
+# names(surf_mat)[3] = "z"
+# #
+
+# for (i in seq(0, 360, by = 2)) {
+#   png(fs::path("lect/images/plane/",
+#                stringr::str_pad(i, 3, pad = "0"), ext = "png"))
+#   scatter3D(x, y, z, col = 'grey20', pch = 19, phi = 25, theta = i)
+#   surf3D(X, Y, Z, add = TRUE, col = "grey")
+#   dev.off()
+# }
+
+```
+
+
+
+## Estimating a linear regression in R
+
+```{r}
+#| echo: true
+#| output-location: fragment
+dat = data.frame(x, y)
+
+lm(y ~ x , data = dat) |> summary() |> coef()
+```
+
+## Logistic regression
+
+* `inv_logit` - a function that "squishes" the vertical axis from ±∞ to 0-1.
+* `logit` - the inverse
+
+```{r}
+#| echo: true
+inv_logit = function(x) exp(x) / (1 + exp(x))
+p = inv_logit(2*x - 1)
+draws = rbinom(n = 30, prob = p, size = 1)
+```
+
+```{r}
+d = data.frame(x, p, draws)
+
+d |> 
+  arrange(x) |> 
+  ggplot(aes(x, draws)) + 
+  geom_point() + 
+  geom_line(aes(y = p), color = "dodgerblue")
+```
+
+
+## Clustering Classification via k-means
+
+
+```{r}
+x <- rbind(matrix(rnorm(100, sd = 0.3), ncol = 2),
+           matrix(rnorm(100, mean = 1, sd = 0.3), ncol = 2))
+colnames(x) <- c("x", "y")
+cl <- kmeans(x, 2)
+plot(x, col = cl$cluster)
+points(cl$centers, col = 1:2, pch = 15, cex = 2)
+```
+
+
+## Tree-based Classifiers 
+
+
+
+# Model Fitting and Validation
+
+
+
+## Fitting quality - over and under-fitting 
+
+
+
+## Train Test validation 
+
+
+
+## Validation metrics 
+
+
+
+## K-fold cross-validation 
+
+
+
+## Hyperparameter Tuning 
+
+
 
 
 
