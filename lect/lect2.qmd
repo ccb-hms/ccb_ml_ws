@@ -23,7 +23,11 @@ include-in-header:
           const images = document.querySelectorAll('img');
 
           images.forEach(image => {
-            image.style = 'filter: drop-shadow(0 0 0.75rem grey)';
+          
+            if (!image.src.endsWith('logo.png')) {
+              image.style = 'filter: drop-shadow(0 0 0.75rem grey)';
+            }
+            
           });
         });
       </script>
