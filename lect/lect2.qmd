@@ -96,6 +96,8 @@ z = 1*x - 2*y + .5 + rnorm(30)
 ```{r}
 #| echo: false
 #| fig-align: center
+#| fig-width: 16
+#| fig-height: 11
 
 lm_res = lm(z ~ y + x)
 pred_pts = expand.grid(x = range(x), 
@@ -106,9 +108,18 @@ Y = seq(min(y), max(y), length.out = 5) |> rep(times = 5) |> matrix(ncol = 5) |>
 Z = matrix(NA, 5,5)
 for (i in 1:5) for (j in 1:5) Z[i,j] = predict(lm_res, data.frame(x = X[i,j], y = Y[i,j]))
 
-rgl::plot3d(x,y,z)
+asp_vec = sapply(list(x,y,z), \(x) 1/diff(range(x)))
+
+open3d(silent = TRUE, cex = 2.5)
+
+# a simple white background
+
+rgl::bg3d("#F2F2F2")
+rgl::plot3d(x,y,z, size = 6, aspect = c(1,1,.8))
+
 rgl::surface3d(X,Y,Z, color = "grey70")
-rglwidget(width = 950, height = 950)
+
+rglwidget()
 # z = seq(min(x), max(x), length.out = 10) |> rep(times = 5) |> matrix(ncol = 5)
 # surf_mat = cbind(pred_pts, predict(lm_res, pred_pts))
 # names(surf_mat)[3] = "z"
